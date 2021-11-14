@@ -8,24 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>WebStudio</title>
 </head>
 <body>
     <!--Header-->
     <header class="page-header">
         <!--navigation section-->
-        <div class="container main__flex">
-            <nav class="navigation main__flex">
-            <a class="logo" href="/">Web<span class="logo-header">Studio</span> </a>    
-            <ul class="navigation__list main__flex">
-                <li class="navigation__item"><a class="navigation__link current" href="/">Студия</a> </li>
+        <div class="container main-flex">
+            <nav class="navigation main-flex">
+            <a class="logo" href="/">Web<span class="logo__header">Studio</span> </a>    
+            <ul class="navigation main-flex">
+                <li class="navigation__item"><a class="navigation__link navigation__link--current" href="/">Студия</a> </li>
                 <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a> </li>
                 <li class="navigation__item"><a class="navigation__link" href="/">Контакты</a> </li>
             </ul>
             </nav>
         <!--contacts section-->
-            <ul class="contacts__list main__flex">
+            <ul class="contacts main-flex">
                 <li class="contacts__item ">
                     <a class="contacts__link" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon" width="16" height="12" fill="#AFB1B8">
@@ -42,9 +42,9 @@
         </div>
     </header>
     <!--Main body-->
-    <main class="page__name">
+    <main>
         <!--hero section-->
-        <section class="hero__section">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__name">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero__button button" type="button" data-modal-open>Заказать услугу</button>
@@ -52,9 +52,9 @@
         </section>
         <!--benefits section-->
         <section class="benefits__section section">
-            <h2 class="visually__hidden">Наши преимущества</h2>
+            <h2 class="visually-hidden">Наши преимущества</h2>
             <div class="container">
-                <ul class="benefits__list main__flex">          
+                <ul class="benefits__list main-flex">          
                     <li class="benefits__item">
                         <div class="benefits__pictures">
                             <svg width="70" height="70">
@@ -98,7 +98,7 @@
         <section class="activity__section section">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
-                <ul class="activity__list main__flex">
+                <ul class="activity__list main-flex">
                     <li class="activity__item">
                         <img src="./images/img1.jpg" 
                         alt="programer working his desk office" 
@@ -124,7 +124,7 @@
         <section class="team__section section">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
-                <ul class="team__list main__flex">
+                <ul class="team__list main-flex">
                     <li class="team__item">
                         <img src="./images/team-member1.jpg"
                         alt="Игорь Демьяненко"
@@ -134,28 +134,28 @@
                         <p class="team__text">Product Designer</p>
                         <ul class="social__list">
                             <li class="social__item">
-                                <a href="https://instagram.com/" class="social-link">
+                                <a href="https://instagram.com/" class="social__link">
                                     <svg class="social__icon" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram-2"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a href="https://twitter.com/" class="social-link">
+                                <a href="https://twitter.com/" class="social__link">
                                     <svg class="social__icon" width="20" height="20">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a href="https://facebook.com/" class="social-link">
+                                <a href="https://facebook.com/" class="social__link">
                                     <svg class="social__icon" width="20" height="20">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a href="https://linkedin.com/" class="social-link">
+                                <a href="https://linkedin.com/" class="social__link">
                                     <svg class="social__icon" width="20" height="20">
                                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                                     </svg>
@@ -288,7 +288,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
-                <ul class="clients__list main__flex">
+                <ul class="clients__list main-flex">
                     <li class="clients__item">
                         <a href="" class="clients__link">
                             <svg class="clients__icon" width="106" height="60">
@@ -336,8 +336,8 @@
         </section>
     </main>
     <!--Footer-->
-    <footer class="page__footer">
-        <div class="footer__container">
+    <footer class="footer">
+        <div class="container">
             <div>
                 <a class="logo" href="/">Web<span class="logo__footer">Studio</span> </a>
                 <!--address section-->
@@ -351,7 +351,7 @@
             </div>
             <div class="footer__social">
                 <h3 class="social__title">Присоединяйтесь</h3>
-                <ul class="footer__social-list main__flex">
+                <ul class="footer__social-list main-flex">
                     <li class="footer__social-item">
                         <a href="https://instagram.com/" class="footer__social-link">
                             <svg class="social__icon" width="20" height="20">
@@ -382,11 +382,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__subscribe">
+            <div class="subscribe">
                 <h3 class="social__title">Подпишитесь на рассылку</h3>
                 <form class="subscribe__form"></form>
                 <input class="subscribe__input" type="text" name="mail" id="mail" placeholder="E-mail"/>
-                <button class="subscribe-__utton" type="submit">Подписаться
+                <button class="subscribe__button" type="submit">Подписаться
                     <svg class="subscribe__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
@@ -431,7 +431,7 @@
             </label>
             <label  for="user__comment">Комментарий</label>
                 <textarea class="modal__form-message" name="user-message" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-            <div class="checkbo__-field">
+            <div class="checkbox__field">
                 <label class="checkbox__label">
                 <input  class="checkbox" type="checkbox">
                 <svg class="checkbox__icon" width="16">
